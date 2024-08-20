@@ -906,6 +906,52 @@
   resolved "https://registry.yarnpkg.com/@chakra-ui/visually-hidden/-/visually-hidden-2.2.0.tgz#9b0ecef8f01263ab808ba3bda7b36a0d91b4d5c1"
   integrity sha512-KmKDg01SrQ7VbTD3+cPWf/UfpF5MSwm3v7MWi0n5t8HnnadT13MF0MJCDSXbBWnzLv1ZKJ6zlyAOeARWX+DpjQ==
 
+"@cloudinary-util/types@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.2.0.tgz#c67ee4c4948236327872239165bf798eeeb899c5"
+  integrity sha512-2Mo5juB1HV+GmVLq2+bU0Yg5FB6r+csbHyDN6njc0AqkEkp+AW+Q6kYbbTYkT7zk3x9tBWfKn3lfR7wUCwowJw==
+
+"@cloudinary-util/types@1.2.0-beta.1":
+  version "1.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.2.0-beta.1.tgz#ba3461e97a26ba8d9d0d733dd983f504a3db0303"
+  integrity sha512-zdMPqadGhRWwSZQcgsUoouJhr2Dnpc4p1ytGLtnEmVFNvwDhYMR6ER3xLP5FoSNzPx10SoWfNl6UWQKInkk+iQ==
+
+"@cloudinary-util/url-loader@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-5.6.0.tgz#778c9b09faa02edd19702e742c931ce9927a7790"
+  integrity sha512-oWTXaaBralKLfk9tD2fWaTfwflx9Acug6L3GO72sLPxIssg+SyeNDiIrNwIFRx6SkFR74bWWNqjp2yu135gaDQ==
+  dependencies:
+    "@cloudinary-util/types" "1.2.0-beta.1"
+    "@cloudinary-util/util" "3.2.0"
+    "@cloudinary/url-gen" "1.15.0"
+    zod "^3.22.4"
+
+"@cloudinary-util/util@3.2.0", "@cloudinary-util/util@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-3.2.0.tgz#cdfb15ca0f04063203109ffbf3a5bc6de7f94c2b"
+  integrity sha512-VJBqAT3W0HQ9kyMagv+EzXkM/VYR9Ks01ewGxsS8T8b2N0NZFPAhYKeU2H9fOXSl6BVrD6aVYjJZAoT8pfQIyA==
+
+"@cloudinary/transformation-builder-sdk@^1.10.0", "@cloudinary/transformation-builder-sdk@^1.14.0":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.14.1.tgz#aa2a75b1c04ddba84f92d2ac3ce29d29a8c1cbca"
+  integrity sha512-z49To4r3byg7zHsOGKsw/nHef5B9W3wSBdDsGoY7JOj75kbvmSlP4MCkS0JU3Bv57EvYYw5ymalPz+bvRXmPlA==
+  dependencies:
+    "@cloudinary/url-gen" "^1.7.0"
+
+"@cloudinary/url-gen@1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.15.0.tgz#a55c9b51cb27301e0bdc4d60e44a7e73d13db103"
+  integrity sha512-bjU67eZxLUgoRy/Plli4TQio7q6P31OYqnEgXxeN9TKXrzr6h0DeEdIUhKI9gy3HkEBWXWWJIPh7j7gkOJPnyA==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.10.0"
+
+"@cloudinary/url-gen@^1.7.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary/url-gen/-/url-gen-1.20.0.tgz#1b4c2433fda9d14a515ba6582d10243b9fc64ad9"
+  integrity sha512-SWtxDOZeROocIYhubtlrSvKlf1H7wBeVaIWqOOvz8TxbHvMLZanRHyNUv8YSxIsrzrjkLk1sI0Q2fr+6FkcqzA==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.14.0"
+
 "@emotion/babel-plugin@^11.12.0":
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.12.0.tgz#7b43debb250c313101b3f885eba634f1d723fcc2"
@@ -1105,6 +1151,21 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.20.0.tgz#cc1f26398bf777807a99226dc13f47eb0f6c720d"
   integrity sha512-y+eoL2I3iphUg9tN9GB6ku1FA8kOfmF4oUEWhztDJ4KXJy1agk/9+pejOuZkNFhRwHAOxMsBPLbXPd6mJiCwew==
 
+"@supabase/auth-helpers-nextjs@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-nextjs/-/auth-helpers-nextjs-0.10.0.tgz#e831968f95e1bc44f400825d251a8b2fda97ee9f"
+  integrity sha512-2dfOGsM4yZt0oS4TPiE7bD4vf7EVz7NRz/IJrV6vLg0GP7sMUx8wndv2euLGq4BjN9lUCpu6DG/uCC8j+ylwPg==
+  dependencies:
+    "@supabase/auth-helpers-shared" "0.7.0"
+    set-cookie-parser "^2.6.0"
+
+"@supabase/auth-helpers-shared@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@supabase/auth-helpers-shared/-/auth-helpers-shared-0.7.0.tgz#244a6b6ac39a5eb1bc8d69a57c25aa580cd0f669"
+  integrity sha512-FBFf2ei2R7QC+B/5wWkthMha8Ca2bWHAndN+syfuEUUfufv4mLcAgBCcgNg5nJR8L0gZfyuaxgubtOc9aW3Cpg==
+  dependencies:
+    jose "^4.14.4"
+
 "@supabase/auth-js@2.64.4":
   version "2.64.4"
   resolved "https://registry.yarnpkg.com/@supabase/auth-js/-/auth-js-2.64.4.tgz#f27fdabf1ebd1b532ceb57e8bbe66969ee09cfba"
@@ -1183,6 +1244,11 @@
   dependencies:
     "@swc/counter" "^0.1.3"
     tslib "^2.4.0"
+
+"@tsconfig/recommended@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@tsconfig/recommended/-/recommended-1.0.7.tgz#fdd95fc2c8d643c8b4a8ca45fd68eea248512407"
+  integrity sha512-xiNMgCuoy4mCL4JTywk9XFs5xpRUcKxtWEcMR6FNMtsgewYTIgIR+nvlP4A4iRCAzRsHMnPhvTRrzp4AGcRTEA==
 
 "@types/lodash.mergewith@4.6.7":
   version "4.6.7"
@@ -1501,6 +1567,11 @@ is-core-module@^2.13.0:
   dependencies:
     hasown "^2.0.2"
 
+jose@^4.14.4:
+  version "4.15.9"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-4.15.9.tgz#9b68eda29e9a0614c042fa29387196c7dd800100"
+  integrity sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -1542,6 +1613,16 @@ nanoid@^3.3.6:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
+
+next-cloudinary@^6.10.0:
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-6.10.0.tgz#e40272dc850d8c8445b8c6525b63390e5439ef48"
+  integrity sha512-iGKg4bPAkGjrWQDovbqQJVb3VPzj6TESgEk46D+dS3cVaFJqnVjwGtGlK9wLA/KX7lhZinvnHvouufuiL7f9ig==
+  dependencies:
+    "@cloudinary-util/types" "1.2.0"
+    "@cloudinary-util/url-loader" "5.6.0"
+    "@cloudinary-util/util" "^3.2.0"
+    "@tsconfig/recommended" "^1.0.7"
 
 next@14.2.5:
   version "14.2.5"
@@ -1724,6 +1805,11 @@ scheduler@^0.23.2:
   dependencies:
     loose-envify "^1.1.0"
 
+set-cookie-parser@^2.6.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/set-cookie-parser/-/set-cookie-parser-2.7.0.tgz#ef5552b56dc01baae102acb5fc9fb8cd060c30f9"
+  integrity sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==
+
 source-map-js@^1.0.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
@@ -1845,3 +1931,8 @@ yaml@^1.10.0:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+
+zod@^3.22.4:
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==

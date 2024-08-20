@@ -3,26 +3,37 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { createClient } from '@/utils/supabase/component';
 import { Box, Button, FormControl, FormLabel, Input, Stack, Heading, Text, useToast } from '@chakra-ui/react';
-import Layout from '@/components/Tools/Layout';
+
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
   const toast = useToast();
   const supabase = createClient();
-  const [error, setError] = useState('');
   const handleLogin = async () => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await supabase.auth.signInWithPassword({ email, password });;
+
     if (error) {
-      setError(error.message);
-      return;
+      toast({
+        title: 'Error',
+        description: error.message,
+        status: 'error',
+        duration: 5000,
+        isClosable: true,
+      });
+    } else {
+      toast({
+        title: 'Logged in!',
+        description: 'Successfully logged in',
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      });
+      router.push('/');
     }
-    router.push('/');
   };
-  
 
   return (
-    <Layout  user={null}>
     <Box p={8} maxWidth="md" mx="auto">
       <Stack spacing={4}>
         <Heading>Login</Heading>
@@ -40,6 +51,5 @@ export default function Login() {
         </Text>
       </Stack>
     </Box>
-    </Layout>
   );
 }
