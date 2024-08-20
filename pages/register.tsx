@@ -4,7 +4,7 @@ import Register from '@/components/Tools/Register'
 export default function login() {
   return (
     <>
-    <Layout>
+    <Layout user={null}>
         <Register/>
     </Layout>
     </>
